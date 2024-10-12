@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Brief on Javascript </title>
+</head>
+<body>
+<h2>Conditions in Javascript</h2>
+<button onclick="MYFUNCTION()">TRY IT!</button>
+<p id="demo"></p>
+<p id="Greetings"></p>
+<script>
+function MYFUNCTION(){
+var Greetings;
+var time= new Date().getHours();
+if (time<10) {
+    Greetings="Good Morning"
+}
+else if (time<20) {
+    Greetings="Good Day"
+}
+else{
+    Greetings="Good Night"
+
+}
+document.getElementById("demo").innerHTML="Current time is "+time
+document.getElementById("Greetings").innerHTML="Current Greeting is "+Greetings
+}
+
+
+</script>
+</body>
+</html>
